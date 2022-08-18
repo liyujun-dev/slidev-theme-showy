@@ -3,6 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/slidev-theme-showy?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-showy)
 
 A showy theme for [Slidev](https://github.com/slidevjs/slidev).
+Live demo: [here](https://slidev-theme-showy.vercel.app/)
 
 <!--
   Learn more about how to write a theme:
