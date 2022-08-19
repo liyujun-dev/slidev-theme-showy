@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify-json/uim': ^1.1.2
   '@slidev/cli': ^0.35.5
   '@slidev/types': ^0.35.5
   codemirror-theme-vars: ^0.1.1
@@ -14,7 +15,8 @@ dependencies:
   theme-vitesse: 0.5.1
 
 devDependencies:
-  '@slidev/cli': 0.35.5
+  '@iconify-json/uim': 1.1.2
+  '@slidev/cli': 0.35.5_postcss@8.4.16
 
 packages:
 
@@ -68,8 +70,8 @@ packages:
     resolution: {integrity: sha512-mgmE7XBYY/21erpzhexk4Cj1cyTQ9LzvnTxtzM17BJ7ERMNE6W72mQRo0I1Ud8eFJ+RVVIcBNhLFZ3GX4XFz5w==}
     dev: true
 
-  /@drauu/core/0.3.0:
-    resolution: {integrity: sha512-rN2Nu70lDIqWrihwlrBlncv94PJrPUi2F91O8vnOEJYpb1qQnG5v8oFiYzfshiSmKzENPKHt7F8eaG5xoaLW4w==}
+  /@drauu/core/0.3.1:
+    resolution: {integrity: sha512-woxjFf1rQ/Z7sfqvfpjClvCkUqhH5bb1dmXs5DZtDE7+zr6qLAZIj0jlqbI2eiBl61Q2zXzsG/oez1E8B+zXpQ==}
     dependencies:
       perfect-freehand: 1.1.0
     dev: true
@@ -99,6 +101,12 @@ packages:
 
   /@iconify-json/ph/1.1.2:
     resolution: {integrity: sha512-NuTdtt/UmuxIHS4hfdyv3BP5JiWikNkr81hFHXDScXlH0GUMdRSY/B5T9vDvbXDY/esMLFnIAXoFVDLsGinhpw==}
+    dependencies:
+      '@iconify/types': 1.1.0
+    dev: true
+
+  /@iconify-json/uim/1.1.2:
+    resolution: {integrity: sha512-y30D/pUfqyIdKxIR+xOthDiQPSTRIM9cOy8PIOmeuTgh4Yc8gTwL8kWuoDenVxPhk0fXsRw16bn441PK6iuDTQ==}
     dependencies:
       '@iconify/types': 1.1.0
     dev: true
@@ -189,7 +197,7 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@slidev/cli/0.35.5:
+  /@slidev/cli/0.35.5_postcss@8.4.16:
     resolution: {integrity: sha512-X+nbqLYIaSxGNqmjI0jnNArzCnvmyf6l1rhGLWiFuvJv9ROVj0z4OstgxK2VWEXy1iYM2GxGQtuEzC1lUHY9iw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -228,7 +236,7 @@ packages:
       nanoid: 4.0.0
       open: 8.4.0
       plantuml-encoder: 1.4.0
-      postcss-nested: 5.0.6
+      postcss-nested: 5.0.6_postcss@8.4.16
       prismjs: 1.28.0
       prompts: 2.4.2
       resolve: 1.22.1
@@ -279,12 +287,12 @@ packages:
       '@vueuse/motion': 2.0.0-beta.18_vue@3.2.37
       codemirror: 5.65.7
       defu: 6.1.0
-      drauu: 0.3.0
+      drauu: 0.3.1
       file-saver: 2.0.5
       js-base64: 3.7.2
       js-yaml: 4.1.0
       katex: 0.16.0
-      mermaid: 9.1.5
+      mermaid: 9.1.6
       monaco-editor: 0.34.0
       nanoid: 4.0.0
       prettier: 2.7.1
@@ -1431,10 +1439,10 @@ packages:
     resolution: {integrity: sha512-o7Fg/AgC7p/XpKjf/+RC3Ok6k4St5F7Q6q6+Nnm3p2zGWioAY6dh0CbbuwOhH2UcSzKsdniE/YnE2/92JcsA+g==}
     dev: true
 
-  /drauu/0.3.0:
-    resolution: {integrity: sha512-27n6beq5cN1PysN0jfwL7Oms2Rk/A2MOQzu9qjhSukKrmpZoypG85q/blTy1ADvh5ukctpYJdytnoQfyNnrgjQ==}
+  /drauu/0.3.1:
+    resolution: {integrity: sha512-eqjboIt++w9Sc3U8X8X1F0Lkw+L2VpiVSx1Sy732urAyMc/aqucvEC8L29P0IoaSHhCLOcrgleVW9ZYqQrrZ8Q==}
     dependencies:
-      '@drauu/core': 0.3.0
+      '@drauu/core': 0.3.1
     dev: true
 
   /duplexer/0.1.2:
@@ -2122,8 +2130,8 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /mermaid/9.1.5:
-    resolution: {integrity: sha512-XoikwsOTTwsf/bKrTKjE5vCWXuhrOocA+/v3ynmdb0PIO1UEdfRLUNb70Cssz4TxTADX6HzeWYsUBCATBi7F1w==}
+  /mermaid/9.1.6:
+    resolution: {integrity: sha512-oBuQk7s55wQgEgH/AK0GYY8U0kBqOIGK9QlJL+VYxh+1kZQtU9tNwoy0gWCfBJDaFIRdfpc/fm9PagaIXg6XFQ==}
     dependencies:
       '@braintree/sanitize-url': 6.0.0
       d3: 7.6.1
@@ -2316,12 +2324,13 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /postcss-nested/5.0.6:
+  /postcss-nested/5.0.6_postcss@8.4.16:
     resolution: {integrity: sha512-rKqm2Fk0KbA8Vt3AdGN0FB9OBOMDVajMG6ZCf/GoHgdxUJ4sBFp0A/uMIRm+MJUdo33YXEtjqIz8u7DAp8B7DA==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
+      postcss: 8.4.16
       postcss-selector-parser: 6.0.10
     dev: true
 
@@ -2686,7 +2695,7 @@ packages:
       magic-string: 0.26.2
       minimatch: 5.1.0
       resolve: 1.22.1
-      unplugin: 0.9.2_vite@3.0.8
+      unplugin: 0.9.3_vite@3.0.8
       vue: 3.2.37
     transitivePeerDependencies:
       - esbuild
@@ -2720,8 +2729,8 @@ packages:
       webpack-virtual-modules: 0.4.4
     dev: true
 
-  /unplugin/0.9.2_vite@3.0.8:
-    resolution: {integrity: sha512-Wo9lx9rA0O3AWhLYYNZ6DgnNhL5t5r7kV/Jg5BXjTQtY+DEWrD8VLFSaOmKN0tgqZCMqZ+XrzgOe/3DzIO4/SA==}
+  /unplugin/0.9.3_vite@3.0.8:
+    resolution: {integrity: sha512-GWXxizZG+tobNs8fuGTCeilerkkfZTZax2iivuE4pxLaF9wTnPJHOq8tbLKDb5ohVb+2BXNjrU9xx59yWTUnuw==}
     peerDependencies:
       esbuild: '>=0.13'
       rollup: ^2.50.0

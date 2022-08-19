@@ -34,6 +34,7 @@
     "theme-vitesse": "^0.5.1"
   },
   "devDependencies": {
+    "@iconify-json/uim": "^1.1.2",
     "@slidev/cli": "^0.35.5"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",

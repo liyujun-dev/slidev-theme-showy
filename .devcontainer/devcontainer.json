@@ -19,8 +19,12 @@
 			"extensions": [
 				"dbaeumer.vscode-eslint",
 				"eamodio.gitlens-insiders",
+				"mhutchie.git-graph",
 				"vivaxy.vscode-conventional-commits",
-				"antfu.slidev"
+				"antfu.slidev",
+				"vue.volar",
+				"antfu.iconify",
+				"voorjaar.windicss-intellisense"
 			]
 		}
 	},
